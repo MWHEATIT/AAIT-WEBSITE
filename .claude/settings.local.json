@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git push *)",
+      "Bash(python -m http.server 8080)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8080/)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(sed -i -e 's/IT department — available/IT department, available/g' -e 's/reputation — while keeping/reputation, while keeping/g' -e 's/scalability — but only/scalability, but only/g' -e 's/worlds — on-premises/worlds. On-premises/g' -e 's/productive — whether/productive, whether/g' -e 's/forward — with no obligation/forward, with no obligation/g' services.html)",
+      "Bash(sed -i -e 's/take for granted — proactive/take for granted: proactive/g' -e 's/professional services — so we understand/professional services, so we understand/g' -e 's/matters most — not the next business day/matters most, not the next business day/g' -e 's/our metric — we measure ours by yours/our metric. We measure ours by yours./g' -e 's/response time under 15 minutes — with/response time under 15 minutes, with/g' -e 's/like a glove — and adapts/like a glove, adapting/g' -e 's/what it costs — before/what it costs, before/g' -e 's/solutions — from the help desk/solutions, from the help desk/g' about.html)",
+      "Bash(sed -i -e 's/Not Sure — Let'\\\\''s Talk/Not Sure? Let'\\\\''s Talk/g' -e 's/genuinely free — no pressure/genuinely free. No pressure/g' -e 's/We'\\\\''re local — same-day/We'\\\\''re local. Same-day/g' -e 's/solutions — from the help desk/solutions, from the help desk/g' contact.html)",
+      "Bash(sed -i -e 's/future concept — it'\\\\''s reshaping/future concept. It'\\\\''s reshaping/g' -e 's/business technology — cybersecurity/business technology: cybersecurity/g' -e 's/IT is here — we'\\\\''re already seeing/IT is here. We'\\\\''re already seeing/g' -e 's/50th cloud migration — no data loss/50th cloud migration. No data loss/g' -e 's/your specific business — no jargon/your specific business. No jargon/g' -e 's/solutions — from the help desk/solutions, from the help desk/g' trends.html)"
+    ]
+  }
+}
