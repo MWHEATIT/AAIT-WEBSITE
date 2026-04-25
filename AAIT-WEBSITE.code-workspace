@@ -16,5 +16,7 @@
 			"path": "../../../../Users/mwheat/Documents/AAIT-WEBSITE/css"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"powershell.cwd": "AAIT-WEBSITE"
+	}
 }
