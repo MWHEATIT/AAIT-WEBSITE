@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Above All IT — Sacramento IT Consulting</title>
+  <meta name="description" content="Get in touch with Above All IT. Schedule a free consultation, request a technology assessment, or ask us anything about IT support in Sacramento, CA.">
+  <meta name="keywords" content="contact Above All IT, IT consultation Sacramento, IT support request Sacramento, free IT assessment Sacramento CA">
+  <meta name="author" content="Above All IT">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://aboveallit.com/contact.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aboveallit.com/contact.html">
+  <meta property="og:title" content="Contact Us | Above All IT — Sacramento IT Consulting">
+  <meta property="og:description" content="Schedule a free consultation or reach out to our Sacramento IT team. We respond within one business hour.">
+  <meta property="og:image" content="https://aboveallit.com/images/og-contact.png">
+  <meta property="og:site_name" content="Above All IT">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@aboveallit">
+  <meta name="twitter:title" content="Contact Above All IT — Sacramento, CA">
+  <meta name="twitter:description" content="Schedule a free IT consultation with Sacramento's trusted technology partner.">
+  <meta name="twitter:image" content="https://aboveallit.com/images/og-contact.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav id="mainNav" class="nav scrolled" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Above All <span>IT</span></a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="success.html">Client Success</a></li>
+        <li><a href="trends.html">Trends</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="contact.html" class="btn-nav">Free Consultation</a>
+      </div>
+      <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <nav id="mobileMenu" class="nav-mobile" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="services.html">Our Services</a>
+    <a href="about.html">About Us</a>
+    <a href="success.html">Client Success</a>
+    <a href="trends.html">Trends</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn-primary">Free Consultation</a>
+  </nav>
+
+  <main>
+
+    <!-- ===================== PAGE HERO ===================== -->
+    <header class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <span class="section-label anim-fade-up">Let's Talk</span>
+        <h1 id="page-title" class="anim-fade-up d1">Get In Touch</h1>
+        <p class="lead anim-fade-up d2">Whether you're ready to get started or just have a question, our Sacramento team is here for you. We respond to all inquiries within one business hour.</p>
+      </div>
+    </header>
+
+    <!-- ===================== CONTACT SECTION ===================== -->
+    <section class="section" aria-labelledby="contact-form-heading">
+      <div class="container">
+        <div class="contact-layout">
+
+          <!-- ---- Form ---- -->
+          <div class="contact-form-box reveal">
+            <h2 id="contact-form-heading">Send Us a Message</h2>
+            <p class="lead">Fill out the form below and a member of our team will be in touch shortly.</p>
+
+            <!--
+              FORM INTEGRATION: Connect this form to Formspree for zero-backend email delivery.
+              Steps:
+                1. Create a free account at https://formspree.io
+                2. Create a new form and copy your endpoint URL (e.g. https://formspree.io/f/YOUR_ID)
+                3. Replace action="#" below with your Formspree endpoint
+                4. Add name="formspree-redirect" with value of your thank-you page URL if desired
+              Alternatively, use Netlify Forms (add netlify attribute) or EmailJS for client-side delivery.
+            -->
+            <form id="contactForm" action="#" method="POST" novalidate aria-label="Contact form">
+              <input type="hidden" name="_subject" value="New Inquiry from Above All IT Website">
+              <input type="text" name="_gotcha" style="display:none" tabindex="-1" aria-hidden="true">
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">First Name <span aria-hidden="true" style="color:var(--blue);">*</span></label>
+                  <input type="text" id="firstName" name="first_name" placeholder="Jane" required autocomplete="given-name">
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last Name <span aria-hidden="true" style="color:var(--blue);">*</span></label>
+                  <input type="text" id="lastName" name="last_name" placeholder="Smith" required autocomplete="family-name">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email Address <span aria-hidden="true" style="color:var(--blue);">*</span></label>
+                  <input type="email" id="email" name="email" placeholder="jane@yourcompany.com" required autocomplete="email">
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" placeholder="(916) 555-0100" autocomplete="tel">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="company">Company Name</label>
+                <input type="text" id="company" name="company" placeholder="Your Business, Inc." autocomplete="organization">
+              </div>
+
+              <div class="form-group">
+                <label for="service">How Can We Help? <span aria-hidden="true" style="color:var(--blue);">*</span></label>
+                <select id="service" name="service" required>
+                  <option value="" disabled selected>Select a service area…</option>
+                  <option value="Managed IT Support">Managed IT Support</option>
+                  <option value="Cybersecurity Solutions">Cybersecurity Solutions</option>
+                  <option value="Cloud Computing &amp; Migration">Cloud Computing &amp; Migration</option>
+                  <option value="Network Infrastructure">Network Infrastructure</option>
+                  <option value="General Inquiry">General Inquiry</option>
+                  <option value="Not Sure">Not Sure? Let's Talk</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message <span aria-hidden="true" style="color:var(--blue);">*</span></label>
+                <textarea id="message" name="message" placeholder="Tell us about your business, your current IT setup, and what you're hoping to achieve…" required></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary" style="width:100%; justify-content:center;">
+                Send Message
+                <svg class="arrow-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+
+              <p style="font-size:.82rem; color:var(--text-mid); margin-top:var(--sp-4); text-align:center;">
+                We respect your privacy and will never share your information. Fields marked <span style="color:var(--blue);">*</span> are required.
+              </p>
+            </form>
+          </div>
+
+          <!-- ---- Contact Info ---- -->
+          <div class="contact-info-panel reveal">
+            <h3>Contact Information</h3>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:support@aboveallit.com">support@aboveallit.com</a>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <strong>Business Hours</strong>
+                <span>Monday – Friday: 8:00 AM – 6:00 PM PST</span>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <strong>Service Area</strong>
+                <span>Sacramento, CA &amp; Greater Sacramento Region</span>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              </div>
+              <div>
+                <strong>Emergency Support</strong>
+                <span>24/7 critical-issue support available to active managed IT clients.</span>
+              </div>
+            </div>
+
+            <!-- Google Maps embed of Sacramento -->
+            <div class="contact-map-wrap" aria-label="Map of Sacramento, CA service area">
+              <!--
+                GOOGLE MAPS: Replace the src below with your actual Google Maps embed URL.
+                To generate one:
+                  1. Go to Google Maps and search for your business address
+                  2. Click Share > Embed a map
+                  3. Copy the iframe src URL and paste it here
+                The placeholder below shows the general Sacramento area.
+              -->
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199645.42783979087!2d-121.63659847499999!3d38.56553279999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+                title="Sacramento, CA — Above All IT Service Area"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TRUST STRIP ===================== -->
+    <section class="section-sm section-light" aria-label="Trust signals">
+      <div class="container">
+        <div class="features-grid stagger-parent" style="--navy:var(--bg-light);">
+
+          <div class="feature-item" style="background:var(--bg-white); border-color:var(--border);">
+            <div class="feat-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <div>
+              <h3 style="color:var(--navy); font-size:1rem;">Fast Response</h3>
+              <p style="color:var(--text-mid);">We reply to all inquiries within one business hour during working hours.</p>
+            </div>
+          </div>
+
+          <div class="feature-item" style="background:var(--bg-white); border-color:var(--border);">
+            <div class="feat-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div>
+              <h3 style="color:var(--navy); font-size:1rem;">No Obligation</h3>
+              <p style="color:var(--text-mid);">Our free consultation is genuinely free. No pressure, no commitment required.</p>
+            </div>
+          </div>
+
+          <div class="feature-item" style="background:var(--bg-white); border-color:var(--border);">
+            <div class="feat-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+            </div>
+            <div>
+              <h3 style="color:var(--navy); font-size:1rem;">Certified Experts</h3>
+              <p style="color:var(--text-mid);">You'll speak directly with certified engineers, not a sales department.</p>
+            </div>
+          </div>
+
+          <div class="feature-item" style="background:var(--bg-white); border-color:var(--border);">
+            <div class="feat-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <h3 style="color:var(--navy); font-size:1rem;">Sacramento Local</h3>
+              <p style="color:var(--text-mid);">We're local. Same-day on-site visits across the Greater Sacramento Area.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="footer-logo">Above All <span>IT</span></a>
+          <p class="footer-tagline">Elevating Sacramento businesses through superior IT solutions, from the help desk to the cloud and beyond.</p>
+          <div class="footer-social">
+            <a href="#" class="social-btn" aria-label="Follow Above All IT on Instagram">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Follow Above All IT on Facebook">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Follow Above All IT on LinkedIn">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Follow Above All IT on X (Twitter)">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4l16 16M4 20L20 4"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links" role="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="success.html">Client Success</a></li>
+            <li><a href="trends.html">Trends</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get In Touch</h4>
+          <div class="footer-contact-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span><a href="mailto:support@aboveallit.com" style="color:inherit;">support@aboveallit.com</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Mon – Fri: 8:00 AM – 6:00 PM</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Sacramento, CA &amp; Surrounding Areas</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Above All IT. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
