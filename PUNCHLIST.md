@@ -2,7 +2,7 @@
 
 Living list of issues to fix. As items get resolved, move them to the **Resolved** section at the bottom and append the date.
 
-Last audit: 2026-04-25 (design critique pass — items added below)
+Last audit: 2026-04-26
 
 ---
 
@@ -28,22 +28,23 @@ Last audit: 2026-04-25 (design critique pass — items added below)
 
 These `href="#"` links will refresh the page if clicked. Replace with real URLs once available.
 
-- [ ] **Facebook profile** — placeholder `href="#"` in footer of [index.html](index.html), [services.html](services.html), [about.html](about.html), [contact.html](contact.html), [success.html](success.html), [trends.html](trends.html), [articles.html](articles.html).
-- [ ] **LinkedIn profile** — same set of pages, same fix.
-- [ ] **X (Twitter) profile** — same set of pages, same fix.
-- [ ] **Legal review of `privacy.html` and `terms.html`** — both pages exist as functional drafts with prominent "Draft — pending legal review" notices. Before they are treated as binding policy, they should be reviewed by counsel and the draft notice + "Last updated" date should be updated. Specific items to confirm: data-handling section (CCPA/CPRA accuracy), governing-law clause (currently California / Sacramento County), liability cap, and confidentiality language vs. the actual client service agreement.
+- [ ] **LinkedIn profile** — placeholder `href="#"` in footer of all pages. Replace with real URL once available.
+- [ ] **X (Twitter) profile** — placeholder `href="#"` in footer of all pages. Replace with real URL once available.
+- [ ] **Facebook vanity username** — footer links currently use the numeric profile URL (`?id=61576016171471`). Once the page has a vanity handle (e.g. `facebook.com/aboveallit`), update all pages.
 
 ## Medium priority — feature work
 
 - [ ] **Dynamic social feed (Instagram + Facebook) on Trends sidebar and home page** — single initiative replacing the two prior placeholder items. Goal: the [trends.html](trends.html) sidebar widget and the home page "Stay Connected With Us" three-card section ([index.html](index.html)) both pull live posts from `instagram.com/aboveallit` and the new Facebook business page, refreshing automatically as new posts go up.
   - **Direction confirmed** (2026-04-25): user wants minimal-maintenance — "make an occasional post and know it's on the website." → Approach (a), an embed-widget service, NOT the Graph API path.
-  - **Blocked on user assets:**
-    - Facebook page URL/handle — user is creating the business page now, will provide later.
-    - **Instagram account type** — user reports `aboveallit` is currently a regular (Personal) account. Most embed widgets and ALL Graph API access require it to be a Business or Creator account. Conversion is free and takes ~2 minutes in IG → Settings → Account → Switch to Professional. Without this, the only viable widgets are the small subset that scrape public profiles (SnapWidget free tier; brittle and may break with IG changes).
-  - **Once unblocked, recommended path:**
-    - Convert IG to Business/Creator → use **Behold.so** for the IG side (free up to 50 posts, native-feeling, drop-in `<div>` snippet, no backend needed). For Facebook, **EmbedSocial** or **Elfsight** can do both IG + FB in one widget if combining is preferred.
-    - Wire the widget snippet into the existing `<div id="instagramFeed">` on Trends and into the three-card section on home.
+  - **Status (2026-04-26): unblocked.**
+    - Instagram `aboveallit` is confirmed as a Business/Creator account.
+    - Facebook page URL: `https://www.facebook.com/profile.php?id=61589016171471`
+  - **Recommended path (ready to implement):**
+    - Use **Behold.so** for Instagram (free up to 50 posts, drop-in `<div>` snippet, no backend). Sign up at behold.so, connect the `aboveallit` IG account, copy the widget snippet.
+    - For Facebook, **EmbedSocial** or **Elfsight** can handle both IG + FB in one widget if combining is preferred — confirm preference before signing up (third-party vendor decision, needs user choice).
+    - Wire the snippet into the existing `<div id="instagramFeed">` on [trends.html](trends.html) and into the three-card section on [index.html](index.html).
     - Match widget styling to the existing `.social-card` glassmorphic look as closely as the vendor allows.
+  - **Blocked on:** vendor selection (Behold-only vs. combined IG+FB widget). Present options to user before creating any account.
 
 ---
 
@@ -68,6 +69,8 @@ These `href="#"` links will refresh the page if clicked. Replace with real URLs 
 
 ## Resolved
 
+- ~~Facebook footer link was placeholder `href="#"`~~ — 2026-04-26 (wired to `https://www.facebook.com/profile.php?id=61589016171471` across all 9 HTML pages; JSON-LD `sameAs` in [index.html](index.html) updated to match)
+- ~~`privacy.html` and `terms.html` carried "Draft — pending legal review" callout~~ — 2026-04-26 (counsel review complete; amber draft banner removed from both pages, "Last updated" date bumped to April 26, 2026)
 - ~~Privacy Policy and Terms of Service footer links were dead `href="#"`~~ — 2026-04-25 (created `privacy.html` and `terms.html` as functional drafts modeled on the existing page-hero / section-light pattern; both carry a prominent "Draft — pending legal review" amber callout. New `.legal-draft` / `.legal-content` styles added to [css/styles.css](css/styles.css). Footer-legal links updated from `#` to `privacy.html` / `terms.html` across all 7 main pages [index.html](index.html), [services.html](services.html), [about.html](about.html), [contact.html](contact.html), [success.html](success.html), [trends.html](trends.html), [articles.html](articles.html). Both pages added to [sitemap.xml](sitemap.xml). The legal review of these drafts is now its own open punchlist item under "needs user input")
 - ~~Live site at aboveallit.com missing all stylization (CSS 404, stale HTML)~~ — 2026-04-25 (root cause: GitHub Pages legacy Jekyll build had been erroring on every push since commit 85c41f8 on 2026-04-25 05:09 UTC, leaving the site frozen on the last successful build's snapshot — that snapshot referenced css/styles.css but the failed deploys never republished it. Fix: added empty `.nojekyll` file at repo root to bypass Jekyll entirely, since this is a static-HTML site with no Liquid templating. Committed as 7733562 and pushed.)
 - ~~Hero CTAs had near-equal visual weight~~ — 2026-04-25 (added `.hero-ctas .btn-outline` override demoting "Our Services" to a transparent text-link with arrow; added arrow icon to the markup so primary "Get a Free Consultation" is unambiguously dominant)
