@@ -31,8 +31,7 @@ These `href="#"` links will refresh the page if clicked. Replace with real URLs 
 - [ ] **Facebook profile** — placeholder `href="#"` in footer of [index.html](index.html), [services.html](services.html), [about.html](about.html), [contact.html](contact.html), [success.html](success.html), [trends.html](trends.html), [articles.html](articles.html).
 - [ ] **LinkedIn profile** — same set of pages, same fix.
 - [ ] **X (Twitter) profile** — same set of pages, same fix.
-- [ ] **Privacy Policy** — placeholder in `.footer-bottom` on all 7 main pages. Either build a `privacy.html` page or link to a hosted policy.
-- [ ] **Terms of Service** — placeholder in `.footer-bottom` on all 7 main pages. Same options as above.
+- [ ] **Legal review of `privacy.html` and `terms.html`** — both pages exist as functional drafts with prominent "Draft — pending legal review" notices. Before they are treated as binding policy, they should be reviewed by counsel and the draft notice + "Last updated" date should be updated. Specific items to confirm: data-handling section (CCPA/CPRA accuracy), governing-law clause (currently California / Sacramento County), liability cap, and confidentiality language vs. the actual client service agreement.
 
 ## Medium priority — feature work
 
@@ -44,6 +43,7 @@ These `href="#"` links will refresh the page if clicked. Replace with real URLs 
 
 ## Resolved
 
+- ~~Privacy Policy and Terms of Service footer links were dead `href="#"`~~ — 2026-04-25 (created `privacy.html` and `terms.html` as functional drafts modeled on the existing page-hero / section-light pattern; both carry a prominent "Draft — pending legal review" amber callout. New `.legal-draft` / `.legal-content` styles added to [css/styles.css](css/styles.css). Footer-legal links updated from `#` to `privacy.html` / `terms.html` across all 7 main pages [index.html](index.html), [services.html](services.html), [about.html](about.html), [contact.html](contact.html), [success.html](success.html), [trends.html](trends.html), [articles.html](articles.html). Both pages added to [sitemap.xml](sitemap.xml). The legal review of these drafts is now its own open punchlist item under "needs user input")
 - ~~Live site at aboveallit.com missing all stylization (CSS 404, stale HTML)~~ — 2026-04-25 (root cause: GitHub Pages legacy Jekyll build had been erroring on every push since commit 85c41f8 on 2026-04-25 05:09 UTC, leaving the site frozen on the last successful build's snapshot — that snapshot referenced css/styles.css but the failed deploys never republished it. Fix: added empty `.nojekyll` file at repo root to bypass Jekyll entirely, since this is a static-HTML site with no Liquid templating. Committed as 7733562 and pushed.)
 - ~~Hero CTAs had near-equal visual weight~~ — 2026-04-25 (added `.hero-ctas .btn-outline` override demoting "Our Services" to a transparent text-link with arrow; added arrow icon to the markup so primary "Get a Free Consultation" is unambiguously dominant)
 - ~~Nav-link touch targets too small (~20px)~~ — 2026-04-25 (`.nav-links a` now uses `padding: 0.75rem 0.25rem`, `min-height: 44px`, and inline-flex centering; underline `::after` repositioned to `bottom: 0.5rem` to track the new padding)
