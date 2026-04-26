@@ -28,7 +28,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -124,7 +124,7 @@
                   <p class="article-excerpt">
                     Artificial intelligence is no longer a future concept. It's reshaping how businesses manage their IT infrastructure, automate workflows, and defend against cyber threats right now. From AI-powered help desks to intelligent threat detection, we break down which AI tools are delivering real ROI for small and mid-sized Sacramento businesses, and which ones are still more hype than substance.
                   </p>
-                  <a href="#" class="link-cta" aria-label="Read full article: The AI Revolution in Business IT">
+                  <a href="articles.html#ai-revolution-2026" class="link-cta" aria-label="Read full article: The AI Revolution in Business IT">
                     Read Full Article
                     <svg class="arrow-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
                   </a>
@@ -151,7 +151,7 @@
                   </div>
                   <h3>The AI Tools Small Businesses Are Actually Using Right Now</h3>
                   <p class="article-excerpt">We've spent the past year testing AI tools with our clients, and a handful are genuinely saving people hours every week. Not every tool lives up to the hype, but some of them are surprisingly practical. Here's what's working, what's a waste of time, and where to start if you haven't touched any of it yet.</p>
-                  <a href="#" class="link-cta" style="margin-top:auto;" aria-label="Read: The AI Tools Small Businesses Are Actually Using Right Now">
+                  <a href="articles.html#ai-tools-small-business" class="link-cta" style="margin-top:auto;" aria-label="Read: The AI Tools Small Businesses Are Actually Using Right Now">
                     Read More
                     <svg class="arrow-icon" width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
                   </a>
@@ -172,7 +172,7 @@
                   </div>
                   <h3>Why Your Employees Keep Calling You About Tech Problems (And How to Fix It)</h3>
                   <p class="article-excerpt">If you're the person your team calls when the printer stops working or someone gets locked out of their account, you already know how much time that eats up. It's not just frustrating. It's costing your business real money every week. The right IT support takes that off your plate entirely, so you can get back to the work only you can do.</p>
-                  <a href="#" class="link-cta" style="margin-top:auto;" aria-label="Read: Why Your Employees Keep Calling You About Tech Problems">
+                  <a href="articles.html#employees-tech-problems" class="link-cta" style="margin-top:auto;" aria-label="Read: Why Your Employees Keep Calling You About Tech Problems">
                     Read More
                     <svg class="arrow-icon" width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
                   </a>
@@ -197,129 +197,72 @@
           <!-- ================== SIDEBAR ================== -->
           <aside class="sidebar" aria-label="Sidebar">
 
-            <!-- Social Feed Widget -->
-            <!--
-              SOCIAL FEED INTEGRATION OPTIONS:
-              ─────────────────────────────────
-              Twitter/X Timeline:
-                Use the official Twitter widget builder at https://publish.twitter.com
-                Choose "Embedded Timeline" for your @aboveallit profile. Replace the
-                placeholder cards below with the generated <a class="twitter-timeline"> tag
-                and load the widget script: <script async src="https://platform.twitter.com/widgets.js">
+            <!-- ===== Instagram Feed Widget =====
+              Pulls latest posts from @aboveallit on Instagram.
 
-              LinkedIn Company Page Feed:
-                LinkedIn does not offer a native embeddable feed for company pages.
-                Recommended third-party options:
-                  - Juicer.io (supports LinkedIn + other networks)
-                  - Curator.io
-                  - EmbedSocial
-                Replace the placeholder cards below with the embed code from your chosen service.
+              HOW TO ENABLE LIVE AUTO-UPDATING POSTS:
+              Instagram does not allow direct profile-feed embedding without an API token.
+              Easiest free option is Behold.so:
+                1. Sign up at https://behold.so (free tier covers small profiles)
+                2. Connect your @aboveallit Instagram account
+                3. Pick a "Basic" widget, copy the generated <script> + <div> snippet
+                4. Replace the placeholder content of <div id="instagramFeed"> below with that snippet
+                5. New posts will appear automatically — no further code changes needed
 
-              Instagram (oEmbed):
-                Use the Instagram oEmbed API or a service like Behold.so.
-                See the comment in index.html for details.
+              Alternatives: Elfsight, EmbedSocial, SnapWidget. All work the same way.
+              Until configured, the placeholder cards link straight to your Instagram profile.
             -->
             <div class="sidebar-widget reveal">
               <h2 class="widget-title">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4l16 16M4 20L20 4"/></svg>
-                From Our Feed
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor"/></svg>
+                Latest on Instagram
               </h2>
-              <p class="widget-embed-note">Placeholder posts — replace with a real X (Twitter) timeline embed using the Twitter widget builder at publish.twitter.com.</p>
+              <p class="widget-embed-note">Follow <a href="https://www.instagram.com/aboveallit/" target="_blank" rel="noopener" style="color:var(--blue);font-weight:600;">@aboveallit</a> for live updates. New posts will appear here once the Behold.so embed is connected (see HTML comment above).</p>
 
-              <!-- Placeholder post 1 -->
-              <div class="social-post-card">
-                <div class="post-card-header">
-                  <div class="post-avatar" aria-hidden="true">AI</div>
-                  <div class="post-identity">
-                    <div class="post-name">Above All IT</div>
-                    <div class="post-handle">@aboveallit</div>
-                  </div>
-                  <div class="post-platform" aria-label="X (Twitter)">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4l16 16M4 20L20 4"/></svg>
-                  </div>
-                </div>
-                <p>AI-assisted IT is here. We're already seeing it cut ticket resolution times by 40% for clients using Microsoft Copilot for help desk triage. Not magic, but genuinely useful when configured correctly. 🤖⚡</p>
-                <div class="post-footer">
-                  <span class="post-stat">
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-                    24
-                  </span>
-                  <span class="post-stat">
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
-                    11
-                  </span>
-                  <span class="post-date">Apr 18</span>
-                </div>
-              </div>
+              <div id="instagramFeed">
 
-              <!-- Placeholder post 2 -->
-              <div class="social-post-card">
-                <div class="post-card-header">
-                  <div class="post-avatar" aria-hidden="true">AI</div>
-                  <div class="post-identity">
-                    <div class="post-name">Above All IT</div>
-                    <div class="post-handle">@aboveallit</div>
+                <!-- Placeholder post 1 -->
+                <a href="https://www.instagram.com/aboveallit/" target="_blank" rel="noopener" class="social-post-card" style="display:block;color:inherit;">
+                  <div class="post-card-header">
+                    <div class="post-avatar" aria-hidden="true">AI</div>
+                    <div class="post-identity">
+                      <div class="post-name">Above All IT</div>
+                      <div class="post-handle">@aboveallit</div>
+                    </div>
+                    <div class="post-platform" aria-label="Instagram">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor"/></svg>
+                    </div>
                   </div>
-                  <div class="post-platform" aria-label="X (Twitter)">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4l16 16M4 20L20 4"/></svg>
+                  <p>AI-assisted IT is here. We're already seeing Microsoft Copilot cut ticket resolution times by 40% for clients using it for help desk triage. Not magic, but genuinely useful when configured correctly. 🤖⚡</p>
+                  <div class="post-footer">
+                    <span class="post-date">View on Instagram →</span>
                   </div>
-                </div>
-                <p>Reminder: your cyber insurance provider may now REQUIRE multi-factor authentication across all admin accounts as a condition of coverage. We're seeing this in renewed policies across the board. Don't get caught without it. 🔒</p>
-                <div class="post-footer">
-                  <span class="post-stat">
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-                    38
-                  </span>
-                  <span class="post-stat">
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
-                    22
-                  </span>
-                  <span class="post-date">Apr 12</span>
-                </div>
-              </div>
+                </a>
 
-            </div><!-- /.sidebar-widget (social feed) -->
-
-            <!-- LinkedIn Widget -->
-            <!--
-              LINKEDIN FEED: LinkedIn's official API does not support public company feed embeds.
-              Options:
-                1. Juicer.io — aggregates LinkedIn + other social feeds into a customizable widget
-                2. Curator.io — similar aggregator with embed code
-                3. Manually curate: copy notable posts here as styled cards (as shown below)
-            -->
-            <div class="sidebar-widget reveal">
-              <h2 class="widget-title">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-                LinkedIn
-              </h2>
-              <p class="widget-embed-note">Placeholder — replace with a Juicer.io or Curator.io embed, or manually curate notable LinkedIn posts.</p>
-
-              <div class="social-post-card">
-                <div class="post-card-header">
-                  <div class="post-avatar" aria-hidden="true">AI</div>
-                  <div class="post-identity">
-                    <div class="post-name">Above All IT</div>
-                    <div class="post-handle">Sacramento, CA</div>
+                <!-- Placeholder post 2 -->
+                <a href="https://www.instagram.com/aboveallit/" target="_blank" rel="noopener" class="social-post-card" style="display:block;color:inherit;">
+                  <div class="post-card-header">
+                    <div class="post-avatar" aria-hidden="true">AI</div>
+                    <div class="post-identity">
+                      <div class="post-name">Above All IT</div>
+                      <div class="post-handle">@aboveallit</div>
+                    </div>
+                    <div class="post-platform" aria-label="Instagram">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor"/></svg>
+                    </div>
                   </div>
-                  <div class="post-platform" aria-label="LinkedIn">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                  <p>Cyber insurance providers now REQUIRE multi-factor authentication across all admin accounts as a condition of coverage. We're seeing this on renewed policies across the board. Don't get caught without it. 🔒</p>
+                  <div class="post-footer">
+                    <span class="post-date">View on Instagram →</span>
                   </div>
-                </div>
-                <p>We just completed our 50th cloud migration. No data loss, no downtime for any of them. The key isn't the technology; it's the preparation and the testing. A migration without a rollback plan is a gamble. 🔄☁️</p>
-                <div class="post-footer">
-                  <span class="post-stat">
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3H14z"/><path d="M7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>
-                    84
-                  </span>
-                  <span class="post-stat">
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-                    12
-                  </span>
-                  <span class="post-date">Apr 8</span>
-                </div>
-              </div>
-            </div><!-- /.sidebar-widget (LinkedIn) -->
+                </a>
+              </div><!-- /#instagramFeed -->
+
+              <a href="https://www.instagram.com/aboveallit/" target="_blank" rel="noopener" class="btn-ghost" style="margin-top:var(--sp-4);width:100%;justify-content:center;">
+                Follow @aboveallit
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor"/></svg>
+              </a>
+            </div><!-- /.sidebar-widget (Instagram) -->
 
             <!-- Topics Widget -->
             <div class="sidebar-widget reveal">
@@ -375,7 +318,7 @@
           <a href="index.html" class="footer-logo">Above All <span>IT</span></a>
           <p class="footer-tagline">Elevating Sacramento businesses through superior IT solutions, from the help desk to the cloud and beyond.</p>
           <div class="footer-social">
-            <a href="#" class="social-btn" aria-label="Follow Above All IT on Instagram">
+            <a href="https://www.instagram.com/aboveallit/" target="_blank" rel="noopener" class="social-btn" aria-label="Follow Above All IT on Instagram">
               <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor"/></svg>
             </a>
             <a href="#" class="social-btn" aria-label="Follow Above All IT on Facebook">

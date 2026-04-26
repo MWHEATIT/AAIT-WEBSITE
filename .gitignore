@@ -1,0 +1,9 @@
+# Editor / OS
+.vscode/
+.idea/
+*.code-workspace
+.DS_Store
+Thumbs.db
+
+# Internal docs (not intended to be public)
+ABOVE_ALL_IT_BUILD_INSTRUCTIONS.md
