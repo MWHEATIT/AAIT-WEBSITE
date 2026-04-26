@@ -44,6 +44,7 @@ These `href="#"` links will refresh the page if clicked. Replace with real URLs 
 
 ## Resolved
 
+- ~~Live site at aboveallit.com missing all stylization (CSS 404, stale HTML)~~ — 2026-04-25 (root cause: GitHub Pages legacy Jekyll build had been erroring on every push since commit 85c41f8 on 2026-04-25 05:09 UTC, leaving the site frozen on the last successful build's snapshot — that snapshot referenced css/styles.css but the failed deploys never republished it. Fix: added empty `.nojekyll` file at repo root to bypass Jekyll entirely, since this is a static-HTML site with no Liquid templating. Committed as 7733562 and pushed.)
 - ~~Hero CTAs had near-equal visual weight~~ — 2026-04-25 (added `.hero-ctas .btn-outline` override demoting "Our Services" to a transparent text-link with arrow; added arrow icon to the markup so primary "Get a Free Consultation" is unambiguously dominant)
 - ~~Nav-link touch targets too small (~20px)~~ — 2026-04-25 (`.nav-links a` now uses `padding: 0.75rem 0.25rem`, `min-height: 44px`, and inline-flex centering; underline `::after` repositioned to `bottom: 0.5rem` to track the new padding)
 - ~~Tablet users (768–1023px) couldn't see "Free Consultation" CTA~~ — 2026-04-25 (moved `.nav-actions { display: flex }` to the 768px breakpoint; phone link kept hidden until 1024px to avoid cramping the bar)
