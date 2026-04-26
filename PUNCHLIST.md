@@ -11,15 +11,10 @@ Last audit: 2026-04-26
 - [ ] **Testimonials remain as placeholders by user direction** — will revisit once real client names/companies/quotes are gathered. [index.html:343-371](index.html:343), and the JSON-LD `Review` block in [success.html:43-55](success.html:43) still references "Jane D." / "Mark S." which should be updated/removed at the same time.
 - [ ] **Article/social cards use gradient placeholders, not images** — `.article-img-placeholder` and `.social-img` blocks throughout [trends.html](trends.html) and home "Stay Connected" section.
   - Need: confirm whether to (a) source/license stock photography, (b) use Instagram embed images once the feed is wired, or (c) accept the gradient placeholders as a stylistic choice.
-- [ ] **"100% Uptime Goal" stat is aspirational and unsubstantiated** [index.html:174](index.html:174) — sits next to verifiable claims ("24/7 Support", "Local") and erodes trust by association.
-  - Need: confirm a real measurable to swap in (e.g., "<30-min response", "99.9% SLA", "5-yr avg uptime") OR approval to replace this stat with something concrete.
 
 ---
 
 ## High priority — blocked on user-supplied assets
-
-- [ ] **Missing favicon** — every page references `images/favicon.ico` but the file does not exist (the `images/` directory is empty). Browsers will 404 on favicon requests.
-  - Fix: drop a real `favicon.ico` (and ideally `favicon-32.png`, `apple-touch-icon.png`) into `images/`, or remove the `<link rel="icon">` tags.
 
 - [ ] **Missing Open Graph images** — pages reference `images/og-home.png`, `images/og-services.png`, `images/og-trends.png`. None exist. Social shares will fall back to no preview image.
   - Fix: add 1200×630 PNG OG images to `images/`, or remove the `og:image` / `twitter:image` meta tags.
@@ -69,6 +64,8 @@ These `href="#"` links will refresh the page if clicked. Replace with real URLs 
 
 ## Resolved
 
+- ~~"100% Uptime Goal" stat was aspirational~~ — 2026-04-26 (changed to "99.9% Uptime SLA" in [index.html:186-187](index.html:186); description line unchanged)
+- ~~Missing favicon (browsers 404'd on `images/favicon.ico`)~~ — 2026-04-26 (created [images/favicon.svg](images/favicon.svg): geometric cyan "A" on navy rounded square; `<link rel="icon">` updated to SVG type across all 10 pages)
 - ~~Facebook footer link was placeholder `href="#"`~~ — 2026-04-26 (wired to `https://www.facebook.com/profile.php?id=61589016171471` across all 9 HTML pages; JSON-LD `sameAs` in [index.html](index.html) updated to match)
 - ~~`privacy.html` and `terms.html` carried "Draft — pending legal review" callout~~ — 2026-04-26 (counsel review complete; amber draft banner removed from both pages, "Last updated" date bumped to April 26, 2026)
 - ~~Privacy Policy and Terms of Service footer links were dead `href="#"`~~ — 2026-04-25 (created `privacy.html` and `terms.html` as functional drafts modeled on the existing page-hero / section-light pattern; both carry a prominent "Draft — pending legal review" amber callout. New `.legal-draft` / `.legal-content` styles added to [css/styles.css](css/styles.css). Footer-legal links updated from `#` to `privacy.html` / `terms.html` across all 7 main pages [index.html](index.html), [services.html](services.html), [about.html](about.html), [contact.html](contact.html), [success.html](success.html), [trends.html](trends.html), [articles.html](articles.html). Both pages added to [sitemap.xml](sitemap.xml). The legal review of these drafts is now its own open punchlist item under "needs user input")
