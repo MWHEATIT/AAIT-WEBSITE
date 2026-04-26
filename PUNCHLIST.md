@@ -35,9 +35,34 @@ These `href="#"` links will refresh the page if clicked. Replace with real URLs 
 
 ## Medium priority — feature work
 
-- [ ] **Instagram feed on [trends.html](trends.html) is placeholder-only** — until the Behold.so (or Elfsight / EmbedSocial) embed snippet is pasted into `<div id="instagramFeed">`, the sidebar shows two static placeholder cards. New IG posts will not appear automatically. See HTML comment above the widget for setup steps.
+- [ ] **Dynamic social feed (Instagram + Facebook) on Trends sidebar and home page** — single initiative replacing the two prior placeholder items. Goal: the [trends.html](trends.html) sidebar widget and the home page "Stay Connected With Us" three-card section ([index.html](index.html)) both pull live posts from `instagram.com/aboveallit` and the new Facebook business page, refreshing automatically as new posts go up.
+  - **Direction confirmed** (2026-04-25): user wants minimal-maintenance — "make an occasional post and know it's on the website." → Approach (a), an embed-widget service, NOT the Graph API path.
+  - **Blocked on user assets:**
+    - Facebook page URL/handle — user is creating the business page now, will provide later.
+    - **Instagram account type** — user reports `aboveallit` is currently a regular (Personal) account. Most embed widgets and ALL Graph API access require it to be a Business or Creator account. Conversion is free and takes ~2 minutes in IG → Settings → Account → Switch to Professional. Without this, the only viable widgets are the small subset that scrape public profiles (SnapWidget free tier; brittle and may break with IG changes).
+  - **Once unblocked, recommended path:**
+    - Convert IG to Business/Creator → use **Behold.so** for the IG side (free up to 50 posts, native-feeling, drop-in `<div>` snippet, no backend needed). For Facebook, **EmbedSocial** or **Elfsight** can do both IG + FB in one widget if combining is preferred.
+    - Wire the widget snippet into the existing `<div id="instagramFeed">` on Trends and into the three-card section on home.
+    - Match widget styling to the existing `.social-card` glassmorphic look as closely as the vendor allows.
 
-- [ ] **Home page "Stay Connected With Us" social cards** — three hardcoded post cards in [index.html](index.html) are static. Consider wiring these to the same Instagram embed used on Trends, or to live IG profile data.
+---
+
+## Larger initiatives — design / brand
+
+- [ ] **Logo / brand mark to replace the text wordmark site-wide** — the current "Above All IT" treatment is type-only (Space Grotesk wordmark with a blue "IT"). Goal: design a proper logo/mark, get user approval on a draft, then roll it out to nav (top-left), footer logo, favicon, and OG share images.
+  - **Brief confirmed** (2026-04-25):
+    - Style: modern, tech-forward — Tesla / SpaceX / Anthropic minimalism. Geometric, restrained, confident.
+    - Symbolism to evoke: sustainable, reliable, innovative, highly advanced.
+    - Palette: keep current navy `#1a1f36` + cyan-blue `#0ea5e9`. Must read in single-color (white-on-dark for nav, navy-on-light for light sections).
+    - Tagline: none in the lockup (matches the Tesla/SpaceX/Anthropic style — they use the brand name only, no descriptor underneath).
+    - Wordmark: keep "Above All IT" alongside the mark. Mark-only variant for favicon/avatar.
+  - **Workflow:**
+    1. Generate 2–4 draft directions as PNG mocks via `anthropic-skills:canvas-design`. Each draft shows: the mark alone (avatar size), the horizontal lockup (mark + "Above All IT"), and a quick mock against both light and dark website backgrounds.
+    2. User reviews in chat, picks a direction (or asks for revisions).
+    3. On approval, finalize as SVG (primary) + PNG fallbacks at 32×32, 180×180 (apple-touch), and 1200×630 (OG).
+    4. Wire the SVG into `.nav-logo` + `.footer-logo` across all pages, replace `images/favicon.ico`, generate new `og-home.png` etc.
+    5. Keep `aria-label="Above All IT — home"` on the linked logo so screen readers still hear the brand name.
+  - Status: ready for step 1 (draft generation) on the next routine pass.
 
 ---
 
