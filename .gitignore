@@ -5,5 +5,8 @@
 .DS_Store
 Thumbs.db
 
+# Claude Code local state (per-user, not for the repo)
+.claude/
+
 # Internal docs (not intended to be public)
 ABOVE_ALL_IT_BUILD_INSTRUCTIONS.md
