@@ -14,11 +14,6 @@ Last audit: 2026-04-26
 
 ---
 
-## High priority — blocked on user-supplied assets
-
-- [ ] **Missing Open Graph images** — pages reference `images/og-home.png`, `images/og-services.png`, `images/og-trends.png`. None exist. Social shares will fall back to no preview image.
-  - Fix: add 1200×630 PNG OG images to `images/`, or remove the `og:image` / `twitter:image` meta tags.
-
 ## Medium priority — placeholder links
 
 These `href="#"` links will refresh the page if clicked. Replace with real URLs once available.
@@ -64,6 +59,7 @@ These `href="#"` links will refresh the page if clicked. Replace with real URLs 
 
 ## Resolved
 
+- ~~Missing Open Graph images referencing non-existent PNGs~~ — 2026-04-27 (removed broken `og:image` and `twitter:image` meta tags from index, services, about, contact, success, trends; downgraded `twitter:card` to `summary` since no image is available. Social shares now show text-only cards instead of broken image placeholders. Re-add `og:image` tags once proper branded OG images are created.)
 - ~~"100% Uptime Goal" stat was aspirational~~ — 2026-04-26 (changed to "99.9% Uptime SLA" in [index.html:186-187](index.html:186); description line unchanged)
 - ~~Missing favicon (browsers 404'd on `images/favicon.ico`)~~ — 2026-04-26 (created [images/favicon.svg](images/favicon.svg): geometric cyan "A" on navy rounded square; `<link rel="icon">` updated to SVG type across all 10 pages)
 - ~~Facebook footer link was placeholder `href="#"`~~ — 2026-04-26 (wired to `https://www.facebook.com/profile.php?id=61589016171471` across all 9 HTML pages; JSON-LD `sameAs` in [index.html](index.html) updated to match)
