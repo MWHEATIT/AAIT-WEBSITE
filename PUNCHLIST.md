@@ -53,7 +53,12 @@ These `href="#"` links will refresh the page if clicked. Replace with real URLs 
     3. On approval, finalize as SVG (primary) + PNG fallbacks at 32×32, 180×180 (apple-touch), and 1200×630 (OG).
     4. Wire the SVG into `.nav-logo` + `.footer-logo` across all pages, replace `images/favicon.ico`, generate new `og-home.png` etc.
     5. Keep `aria-label="Above All IT — home"` on the linked logo so screen readers still hear the brand name.
-  - Status: ready for step 1 (draft generation) on the next routine pass.
+  - **Status (2026-05-02): step 1 complete — 3 draft directions generated, awaiting user review.**
+    - Draft PNGs saved locally in `images/logo-drafts/` (gitignored, not on the live site).
+    - **Direction 01 — "The Apex"**: Bold upward chevron. Pure geometric thrust, reads as an abstract "A" or upward arrow. The simplest and most iconic of the three.
+    - **Direction 02 — "The Ascent"**: Refined geometric A-form with a crossbar accent. More explicitly letter-based, architectural precision.
+    - **Direction 03 — "The Shield"**: Hexagonal frame enclosing an upward chevron. Suggests protection, stability, network infrastructure. Most complex mark.
+    - **Blocked on:** user picks a direction (or requests revisions) before proceeding to step 2 (SVG finalization + site rollout).
 
 ---
 

@@ -10,3 +10,10 @@ Thumbs.db
 
 # Internal docs (not intended to be public)
 ABOVE_ALL_IT_BUILD_INSTRUCTIONS.md
+
+# Local secrets — never commit
+.env
+.env.local
+
+# Logo drafts (local review files, not for the live site)
+images/logo-drafts/
