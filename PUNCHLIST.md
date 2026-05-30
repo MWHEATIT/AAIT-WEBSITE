@@ -64,6 +64,7 @@ These `href="#"` links will refresh the page if clicked. Replace with real URLs 
 
 ## Resolved
 
+- ~~No self-scheduling option for after-hours visitors~~ — 2026-05-29 (added a "Book a 30-Min Call" CTA to the top of the contact-info panel in [contact.html](contact.html), wired to the user's cal.com booking page `https://cal.com/matthew-wheat-aait/30min`, opening in a new tab with `rel="noopener"`. New `.contact-book-cta` styles added to [css/styles.css](css/styles.css) matching the glassmorphic blue-tint card aesthetic. Lets website visitors book a consultation directly without waiting on the contact-form reply loop.)
 - ~~Missing Open Graph images referencing non-existent PNGs~~ — 2026-04-27 (removed broken `og:image` and `twitter:image` meta tags from index, services, about, contact, success, trends; downgraded `twitter:card` to `summary` since no image is available. Social shares now show text-only cards instead of broken image placeholders. Re-add `og:image` tags once proper branded OG images are created.)
 - ~~"100% Uptime Goal" stat was aspirational~~ — 2026-04-26 (changed to "99.9% Uptime SLA" in [index.html:186-187](index.html:186); description line unchanged)
 - ~~Missing favicon (browsers 404'd on `images/favicon.ico`)~~ — 2026-04-26 (created [images/favicon.svg](images/favicon.svg): geometric cyan "A" on navy rounded square; `<link rel="icon">` updated to SVG type across all 10 pages)
