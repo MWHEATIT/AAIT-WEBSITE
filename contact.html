@@ -93,17 +93,9 @@
             <h2 id="contact-form-heading">Send Us a Message</h2>
             <p class="lead">Fill out the form below and a member of our team will be in touch shortly.</p>
 
-            <!--
-              FORM INTEGRATION: Connect this form to Formspree for zero-backend email delivery.
-              Steps:
-                1. Create a free account at https://formspree.io
-                2. Create a new form and copy your endpoint URL (e.g. https://formspree.io/f/YOUR_ID)
-                3. Replace action="#" below with your Formspree endpoint
-                4. Add name="formspree-redirect" with value of your thank-you page URL if desired
-              Alternatively, use Netlify Forms (add netlify attribute) or EmailJS for client-side delivery.
-            -->
-            <form id="contactForm" action="#" method="POST" novalidate aria-label="Contact form">
+            <form id="contactForm" action="https://formspree.io/f/xvzynovp" method="POST" novalidate aria-label="Contact form">
               <input type="hidden" name="_subject" value="New Inquiry from Above All IT Website">
+              <input type="hidden" name="_next" value="https://aboveallit.com/success.html">
               <input type="text" name="_gotcha" style="display:none" tabindex="-1" aria-hidden="true">
 
               <div class="form-row">
