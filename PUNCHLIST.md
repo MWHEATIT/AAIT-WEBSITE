@@ -2,7 +2,7 @@
 
 Living list of issues to fix. As items get resolved, move them to the **Resolved** section at the bottom and append the date.
 
-Last audit: 2026-05-30
+Last audit: 2026-06-03
 
 ---
 
@@ -63,6 +63,8 @@ These `href="#"` links will refresh the page if clicked. Replace with real URLs 
 ---
 
 ## Resolved
+
+- ~~sitemap.xml lastmod dates were stale on 7 of 9 pages~~ — 2026-06-03 (updated `lastmod` to match actual last-git-commit date per page: `/` + services + about + success → 2026-04-27; privacy + terms → 2026-04-26; contact → 2026-05-30; trends + articles were already correct at 2026-05-17. Helps search engines know to re-crawl contact.html which had two significant changes in May.)
 
 - ~~Contact form silently dropped all submissions (action="#")~~ — 2026-05-30 (wired `action` to Formspree endpoint `https://formspree.io/f/xvzynovp`; added `_next` redirect to `success.html`; removed stale TODO comment from [contact.html](contact.html))
 
